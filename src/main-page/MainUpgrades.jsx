@@ -16,6 +16,7 @@ export function MainUpgrades({upgrades, upgradeGroup, handleUpgrade}) {
         <div className="upgrades">
             {currentUpgrade?.upgrades?.map(upgrade => 
                 <div key={upgrade.id} data-key={upgrade.id} className='upgrades__tile'>
+                    <div className='upgrades__tile-lvl'>lvl: {upgrade.lvl}</div>
                     <p>Прибыль: {upgrade.reward}</p>
                     <div className='upgrades__tile-button' onClick={handleClick}>{upgrade.price} монет</div>
                 </div>

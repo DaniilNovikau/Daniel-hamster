@@ -33,22 +33,26 @@ export function MainPage() {
                     {
                         id: '1',
                         price: 10,
-                        reward: 1
+                        reward: 1,
+                        lvl: 0
                     },
                     {
                         id: '2',
                         price: 500,
-                        reward: 5
+                        reward: 5,
+                        lvl: 0
                     },
                     {
                         id: '3',
-                        price: 10000,
-                        reward: 10
+                        price: 7500,
+                        reward: 20,
+                        lvl: 0
                     },
                     {
                         id: '4',
                         price: 250000,
-                        reward: 50
+                        reward: 100,
+                        lvl: 0
                     }
                 ]
             },
@@ -58,22 +62,26 @@ export function MainPage() {
                     {
                         id: '1',
                         price: 150,
-                        reward: 60
+                        reward: 60,
+                        lvl: 0
                     },
                     {
                         id: '2',
-                        price: 10000,
-                        reward: 300
+                        price: 2500,
+                        reward: 300,
+                        lvl: 0
                     },
                     {
                         id: '3',
-                        price: 75000,
-                        reward: 600
+                        price: 50000,
+                        reward: 1200,
+                        lvl: 0
                     },
                     {
                         id: '4',
-                        price: 1250000,
-                        reward: 3000
+                        price: 750000,
+                        reward: 6000,
+                        lvl: 0
                     }
                 ]
             }
@@ -150,22 +158,26 @@ export function MainPage() {
                     {
                         id: '1',
                         price: 10,
-                        reward: 1
+                        reward: 1,
+                        lvl: 0
                     },
                     {
                         id: '2',
                         price: 500,
-                        reward: 5
+                        reward: 5,
+                        lvl: 0
                     },
                     {
                         id: '3',
-                        price: 10000,
-                        reward: 10
+                        price: 7500,
+                        reward: 20,
+                        lvl: 0
                     },
                     {
                         id: '4',
                         price: 250000,
-                        reward: 50
+                        reward: 100,
+                        lvl: 0
                     }
                 ]
             },
@@ -175,22 +187,26 @@ export function MainPage() {
                     {
                         id: '1',
                         price: 150,
-                        reward: 60
+                        reward: 60,
+                        lvl: 0
                     },
                     {
                         id: '2',
-                        price: 10000,
-                        reward: 300
+                        price: 2500,
+                        reward: 300,
+                        lvl: 0
                     },
                     {
                         id: '3',
-                        price: 75000,
-                        reward: 600
+                        price: 50000,
+                        reward: 1200,
+                        lvl: 0
                     },
                     {
                         id: '4',
-                        price: 1250000,
-                        reward: 3000
+                        price: 750000,
+                        reward: 6000,
+                        lvl: 0
                     }
                 ]
             }
@@ -228,7 +244,8 @@ export function MainPage() {
                         if(u.id === upgradeId) {
                             return {
                                 ...u,
-                                price: Math.round((u.price + u.price * 0.5) * 1.1)
+                                price: Math.round((u.price + u.price * 0.5) * 1.1),
+                                lvl: u.lvl + 1
                             };
                         }
 
