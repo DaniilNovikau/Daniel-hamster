@@ -1,0 +1,32 @@
+.upgrades {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.upgrades__tile {
+    position: relative;
+    background: rgb(102, 105, 167);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.upgrades__tile-button {
+    color: white;
+    margin-top: 1rem;
+    background: rgb(144, 146, 204);
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.upgrades__tile-lvl {
+    position: absolute;
+    color: white;
+    font-size: 0.75rem;
+    top: 1.25rem;
+}
+
+.upgrades__tile-button:hover {
+    background: rgb(174, 176, 225);
+}
